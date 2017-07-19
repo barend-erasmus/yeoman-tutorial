@@ -47,4 +47,61 @@ You'll be prompted to answer a series of questions where after it will create th
 
 ## Creating your Generator
 
-TO BE CONTINUED.
+a Yeoman uses Node.js modules with certain attributes as generators. The module name has to be in the format of `generator-name` and the `package.json` file need to contain `yeoman-generator` as a keyword.
+
+This what your directory structure should look like.
+
+```
+generator-name
+├───package.json
+└───generators/
+    ├───app/
+        ├───templates
+        |    └───hello-world.html
+        └───index.js
+```
+
+
+This is what your `package.json` should look like.
+
+```
+{
+  "name": "generator-name",
+  "version": "0.1.0",
+  "description": "",
+  "files": [
+    "generators"
+  ],
+  "keywords": ["yeoman-generator"],
+  "dependencies": {
+    "yeoman-generator": "^1.0.0"
+  }
+}
+```
+
+This should is what your `index.js` should look like.
+
+```javascript
+const Generator = require('yeoman-generator');
+
+module.exports = class extends Generator {
+    constructor(args, opts) {
+        super(args, opts);
+    }
+
+    writing() {
+
+        const obj = {
+            name: this.args[0]
+        };
+
+        this.fs.copyTpl(
+            this.templatePath(),
+            this.destinationPath(),
+            obj
+        );
+    }
+};
+```
+
+For more details click [here](http://yeoman.io/authoring/).
