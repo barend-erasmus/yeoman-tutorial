@@ -104,4 +104,4 @@ module.exports = class extends Generator {
 };
 ```
 
-For more details click [here](http://yeoman.io/authoring/).
+For more details, click [here](http://yeoman.io/authoring/).
