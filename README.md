@@ -47,7 +47,7 @@ You'll be prompted to answer a series of questions where after it will create th
 
 ## Creating your Generator
 
-a Yeoman uses Node.js modules with certain attributes as generators. The module name has to be in the format of `generator-name` and the `package.json` file need to contain `yeoman-generator` as a keyword.
+Yeoman uses Node.js modules with certain attributes as generators. The module name has to be in the format of `generator-name` and the `package.json` file need to contain `yeoman-generator` as a keyword.
 
 This what your directory structure should look like.
 
