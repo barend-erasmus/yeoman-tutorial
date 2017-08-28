@@ -2,7 +2,7 @@
 
 Yeoman helps you to kick-start new projects, prescribing best practices and tools to help you stay productive.
 
-Yeoman is a command line tool which enables you the create projects from scaffolding templates referred to as generators. These generators are fully customizable and can also be parameterized.
+Yeoman is a command line tool which enables you to create projects from scaffolding templates referred to as generators. These generators are fully customizable and can also be parameterized.
 
 ## Installing Yeoman
 
@@ -35,7 +35,7 @@ Everything looks all right!
 
 We'll be using the `generator-webapp` for this example.
 
-First install the generator by running:
+First, install the generator by running:
 
 `npm install -g generator-webapp`
 
